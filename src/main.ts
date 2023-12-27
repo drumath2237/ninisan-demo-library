@@ -1,23 +1,13 @@
-import './style.css'
-import typescriptLogo from './typescript.svg'
-import { setupCounter } from '../lib/main'
+import "./style.css";
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://www.typescriptlang.org/" target="_blank">
-      <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
-    </a>
-    <h1>Vite + TypeScript</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite and TypeScript logos to learn more
-    </p>
-  </div>
-`
+import { add, sayHello } from "../lib";
 
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+const result = add(1, 2);
+const message = sayHello("Alice");
+
+const resultView = document.getElementById("result") as HTMLParagraphElement;
+const messageView = document.getElementById("message") as HTMLParagraphElement;
+
+resultView.textContent = `1+2=${result}`;
+messageView.textContent = `message is "${message}"`;
+
