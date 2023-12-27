@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "ninisan-demo-library": "^0.1.0",
     "typescript": "^5.2.2",
     "vite": "^5.0.8"
   }

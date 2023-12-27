@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 devDependencies:
+  ninisan-demo-library:
+    specifier: ^0.1.0
+    version: 0.1.0
   typescript:
     specifier: ^5.2.2
     version: 5.3.3
@@ -368,6 +371,10 @@ packages:
     resolution: {integrity: sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
+    dev: true
+
+  /ninisan-demo-library@0.1.0:
+    resolution: {integrity: sha512-u565sww2z1+2gUiUt8z337SNNBUiYm0cDSeziY6mEn/jxY4sEQhEBGOUK7iH3wemALUOv4lJno6sQwATU9n1xA==}
     dev: true
 
   /picocolors@1.0.0:
