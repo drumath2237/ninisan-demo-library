@@ -1,6 +1,6 @@
 {
   "name": "ninisan-demo-library",
-  "private": true,
+  "private": false,
   "version": "0.1.0",
   "description": "ninisan's demo npm package",
   "author": "drumath2237",
@@ -17,8 +17,7 @@
   },
   "type": "module",
   "files": [
-    "dist",
-    "index.d.ts"
+    "dist"
   ],
   "main": "./dist/index.umd.cjs",
   "module": "./dist/index.js",
@@ -30,7 +29,8 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build"
+    "build": "tsc && vite build",
+    "prepare": "pnpm build"
   },
   "devDependencies": {
     "@types/node": "^20.10.5",
