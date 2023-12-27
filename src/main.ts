@@ -5,9 +5,16 @@ import { add, sayHello } from "../lib";
 const result = add(1, 2);
 const message = sayHello("Alice");
 
-const resultView = document.getElementById("result") as HTMLParagraphElement;
-const messageView = document.getElementById("message") as HTMLParagraphElement;
+const resultView = document.getElementById(
+  "result"
+) as HTMLParagraphElement | null;
 
-resultView.textContent = `1+2=${result}`;
-messageView.textContent = `message is "${message}"`;
+const messageView = document.getElementById(
+  "message"
+) as HTMLParagraphElement | null;
+
+if (resultView && messageView) {
+  resultView.textContent = `1+2=${result}`;
+  messageView.textContent = `message is "${message}"`;
+}
 
